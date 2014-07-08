@@ -4,3 +4,6 @@
 [submodule "package/solarized"]
 	path = package/solarized
 	url = git@github.com:altercation/solarized.git
+[submodule "package/config"]
+	path = package/config
+	url = git@github.com:moonfruit/config.git

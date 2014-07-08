@@ -1,5 +1,5 @@
 # for PATH
-export PATH="$HOME/Documents/Enviroment/bin:/opt/subversion/bin:/usr/local/bin:$PATH"
+export PATH="$ENV/bin:$ENV/tools:/opt/subversion/bin:/usr/local/bin:$PATH"
 
 # other
 export EDITOR='vim'
