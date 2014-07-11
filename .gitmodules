@@ -7,3 +7,6 @@
 [submodule "package/config"]
 	path = package/config
 	url = git@github.com:moonfruit/config.git
+[submodule "package/pac"]
+	path = package/pac
+	url = git@gitcafe.com:MoonFruit/PAC
