@@ -8,10 +8,6 @@ export ZSH="$HOME/Documents/Enviroment/package/oh-my-zsh"
 #ZSH_THEME="robbyrussell"
 ZSH_THEME="agnoster"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -41,7 +37,7 @@ DISABLE_AUTO_UPDATE="true"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -53,25 +49,8 @@ ZSH_CUSTOM="$HOME/Documents/Enviroment/etc/zsh"
 plugins=(autojump colored-man extract git npm pip sublime svn-fast-info
          zsh-completions zsh-syntax-highlighting history-substring-search)
 
+ZDOTDIR="${HOME}/.zsh"
+HISTFILE="${ZDOTDIR:-${HOME}}/history.txt"
+ZSH_COMPDUMP="${ZDOTDIR:-${HOME}}/compdump.zsh"
+
 source $ZSH/oh-my-zsh.sh
-
-# User configuration
-
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
