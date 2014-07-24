@@ -21,3 +21,6 @@ ldpath() {
             ;;
     esac
 }
+
+# for env
+ldpath "$ENV/lib"
