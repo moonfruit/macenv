@@ -1,0 +1,8 @@
+#!/bin/sh
+
+VER=`brew info python3 | cat | head -1 | sed 's/.*\(3\.[0-9]*\).*/\1/'`
+
+cat <<END
+`brewpath python3`/Frameworks/Python.framework/Versions/$VER/lib/python$VER
+/usr/local/lib/python$VER/site-packages
+END

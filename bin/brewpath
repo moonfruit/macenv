@@ -1,0 +1,2 @@
+#!/bin/sh
+brew info "$1" 2>&1 | grep '\*$' | awk '{print $1}'
