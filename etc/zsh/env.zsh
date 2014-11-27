@@ -3,7 +3,8 @@ export PATH="$ENV/bin:$ENV/tools:/opt/subversion/bin:/usr/local/bin:/usr/local/s
 
 # other
 export EDITOR='vim'
-export GREP_OPTIONS='-E --color=auto'
+unset GREP_OPTIONS
+unset GREP_COLOR
 
 # for zsh
 OS=`uname -s`
