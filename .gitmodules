@@ -13,3 +13,6 @@
 [submodule "package/sedsed"]
 	path = package/sedsed
 	url = git@github.com:aureliojargas/sedsed.git
+[submodule "package/todo.txt"]
+	path = package/todo.txt
+	url = git@github.com:freitass/todo.txt-vim.git
