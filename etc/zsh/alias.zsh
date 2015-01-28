@@ -32,3 +32,6 @@ vman() {
            -c 'map <SPACE> <C-D>' -c 'map b <C-U>' \
            -c 'nmap K :Man <C-R>=expand(\\\"<cword>\\\")<CR><CR>' -\"" man $*
 }
+
+export TODOTXT_DEFAULT_ACTION=ls
+alias td="todo.sh"

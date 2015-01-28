@@ -1,3 +1,3 @@
 #!/bin/sh
 PATH=/usr/local/bin:$PATH
-grep -E --color=auto -dskip --exclude-dir=.cvs --exclude-dir=.svn --exclude-dir=.git --exclude-dir=.hg $*
+grep -E --color=auto -dskip --exclude-dir=.cvs --exclude-dir=.svn --exclude-dir=.git --exclude-dir=.hg "$@"
