@@ -1,0 +1,8 @@
+#!/bin/sh
+
+SQLITE="${APP_HOME}/fw/gal/bin/sqlite3"
+if [ ! -x "${SQLITE}" ]; then
+	SQLITE="sqlite3"
+fi
+
+"${SQLITE}" $*
