@@ -1,5 +1,5 @@
 export ORACLE_HOME="$ENV/package/oracle"
-export ORACLE_SID="oradb"
+export ORACLE_SID="oradb_30"
 
 export NLS_LANG="SIMPLIFIED CHINESE_CHINA.AL32UTF8"
 
