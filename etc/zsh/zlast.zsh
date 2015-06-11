@@ -1,7 +1,7 @@
 # for GPP
 export APP_HOME="$WORKSPACE/gpp"
 export NODE_ID="YY"
-source "$APP_HOME/etc/bashrc"
+NOCD=1 source "$APP_HOME/etc/bashrc"
 
 source =(env | grep _HOME | sed 's/\(.*\)=.*/hash -d \1="$\1"/')
 
