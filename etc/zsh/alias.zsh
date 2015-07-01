@@ -20,7 +20,7 @@ alias hist="history"
 alias bash="SHELL=/usr/local/bin/bash /usr/local/bin/bash --login"
 alias diff="colordiff"
 alias ldd="otool -L"
-alias tc="tmux -CC"
+alias tmuxc="tmux -CC"
 
 alias sl='sl -e'
 alias LS='sl'
@@ -34,4 +34,5 @@ vman() {
 }
 
 export TODOTXT_DEFAULT_ACTION=ls
-alias td="todo.sh"
+alias todo="todo.sh"
+compdef todo=todo.sh
