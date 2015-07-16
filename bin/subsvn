@@ -1,2 +1,3 @@
 #!/bin/sh
+export LANG=C
 /opt/subversion/bin/svn --config-dir "$ENV/package/config/sublime/subversion" "$@"

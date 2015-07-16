@@ -1,1 +1,3 @@
-/usr/local/bin/colorsvn
+#!/bin/sh
+export LANG=C
+/usr/local/bin/colorsvn "$@"
