@@ -16,3 +16,6 @@
 [submodule "package/todo.txt"]
 	path = package/todo.txt
 	url = git@github.com:freitass/todo.txt-vim.git
+[submodule "package/autojump"]
+	path = package/autojump
+	url = git@github.com:wting/autojump.git
