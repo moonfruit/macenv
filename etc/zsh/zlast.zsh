@@ -8,5 +8,5 @@ source =(env | grep _HOME | sed 's/\(.*\)=.*/hash -d \1="$\1"/')
 # for PATH
 export PATH="$ENV/bin:$ENV/tools:/opt/subversion/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
-dylink "$DYLD_FALLBACK_LIBRARY_PATH"
+# dylink "$DYLD_FALLBACK_LIBRARY_PATH"
 archey
