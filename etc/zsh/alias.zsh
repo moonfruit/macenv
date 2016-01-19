@@ -35,3 +35,5 @@ vim -R -c 'set ft=man nomod nolist' -c 'map q :q<CR>' \
 
 export TODOTXT_DEFAULT_ACTION=ls
 alias todo="todo.sh"
+
+function dmalloc { eval `command dmalloc -b "$@"`; }

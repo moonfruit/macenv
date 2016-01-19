@@ -1,0 +1,2 @@
+#!/bin/sh
+find . -name ".svn" | sed 's|/.svn||;s|\./||' | xargs svn st
