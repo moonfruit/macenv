@@ -9,7 +9,7 @@
 	url = git@github.com:moonfruit/config.git
 [submodule "package/pac"]
 	path = package/pac
-	url = git@gitcafe.com:MoonFruit/PAC
+	url = git@git.coding.net:moonfruit/pac.git
 [submodule "package/sedsed"]
 	path = package/sedsed
 	url = git@github.com:aureliojargas/sedsed.git
