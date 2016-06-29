@@ -9,17 +9,15 @@
 #       $6      the parameter specified by the 'ipparam' option to pppd
 
 # DEBUGFILE=/tmp/ip-up-debug.txt
-# echo "1:$1 2:$2 3:$3 4:$4 5:$5 6:$6" > "$DEBUGFILE"
-NET=`echo $4 | cut -d. -f1,2,3`
-# echo "$NET" >> "$DEBUGFILE"
+# echo "1:$1 2:$2 3:$3 4:$4 5:$5 6:$6" >"$DEBUGFILE"
+NET=`echo "$4" | cut -d. -f1-3`
+# echo "$NET" >>"$DEBUGFILE"
 
 case "$NET" in
-     192.168.10)
-     # echo "CASE1" >> "$DEBUGFILE"
-     RESULT=`/sbin/route add -net 192.168.0 -interface $1`
-     # echo "$RESULT" >> "$DEBUGFILE"
-     ;;
-     *)
-     # echo "No match" >> "$DEBUGFILE"
-     ;;
+	172.16.33)
+		/sbin/route add -net 192.168.0 -interface "$1" #>>"$DEBUGFILE" 2>&1
+	;;
+	*)
+		# echo "No match" >>"$DEBUGFILE"
+	;;
 esac
