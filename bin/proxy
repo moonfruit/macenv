@@ -1,6 +1,6 @@
 #!/bin/sh
 
-port=8081
+port=9900
 if echo "$1" | grep '^[0-9]+$' >/dev/null 2>&1; then
 	port="$1"
 	shift
