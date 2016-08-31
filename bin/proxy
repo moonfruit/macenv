@@ -6,7 +6,9 @@ if echo "$1" | grep '^[0-9]+$' >/dev/null 2>&1; then
 	shift
 fi
 
-export http_proxy="http://dkmoonfruit:QAZwsxEDC@127.0.0.1:$port"
-export https_proxy="$http_proxy"
+if [[ port -gt 0 ]]; then
+	export http_proxy="http://dkmoonfruit:QAZwsxEDC@127.0.0.1:$port"
+	export https_proxy="$http_proxy"
+fi
 
 "$@"
