@@ -47,5 +47,5 @@ while [[ $PORT -lt 9915 ]]; do
 	echo
 	echo -------- $PORT --------
 	test_port $PORT
-	PORT=$(expr $PORT + 1)
+	PORT=$(($PORT + 1))
 done
