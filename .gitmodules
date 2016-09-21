@@ -19,3 +19,6 @@
 [submodule "package/autojump"]
 	path = package/autojump
 	url = git@github.com:wting/autojump.git
+[submodule "package/vimcdoc"]
+	path = package/vimcdoc
+	url = https://github.com/vimcn/vimcdoc.git
