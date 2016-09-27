@@ -19,9 +19,21 @@
 [submodule "package/autojump"]
 	path = package/autojump
 	url = git@github.com:wting/autojump.git
-[submodule "package/vimcdoc"]
-	path = package/vimcdoc
-	url = https://github.com/vimcn/vimcdoc.git
 [submodule "package/billdan"]
 	path = package/billdan
 	url = https://github.com/m13253/BiliDan.git
+[submodule "package/vim/vimcdoc"]
+	path = package/vim/vimcdoc
+	url = https://github.com/vimcn/vimcdoc.git
+[submodule "package/vim/pathogen"]
+	path = package/vim/pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule "package/vim/clang"]
+	path = package/vim/clang
+	url = https://github.com/Rip-Rip/clang_complete.git
+[submodule "package/vim/conque"]
+	path = package/vim/conque
+	url = https://github.com/vim-scripts/Conque-Shell.git
+[submodule "package/vim/supertab"]
+	path = package/vim/supertab
+	url = https://github.com/ervandew/supertab.git
