@@ -14,4 +14,4 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 source /usr/local/var/python/bin/activate
 
 # dylink "$DYLD_FALLBACK_LIBRARY_PATH"
-archey
+archey -o

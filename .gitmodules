@@ -22,3 +22,6 @@
 [submodule "package/vimcdoc"]
 	path = package/vimcdoc
 	url = https://github.com/vimcn/vimcdoc.git
+[submodule "package/billdan"]
+	path = package/billdan
+	url = https://github.com/m13253/BiliDan.git
