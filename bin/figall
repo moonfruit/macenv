@@ -1,7 +1,7 @@
 #!/bin/sh
 
-for FONT in `ls -1 /usr/local/opt/figlet/share/figlet/fonts/*.flf`; do
-	FONT=`basename $FONT .flf`
-	echo $FONT
+for FONT in /usr/local/opt/figlet/share/figlet/fonts/*.flf; do
+	FONT=$(basename "$FONT" .flf)
+	echo "$FONT"
 	figlet -f "$FONT" "$@"
 done

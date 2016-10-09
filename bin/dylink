@@ -1,13 +1,15 @@
 #!/bin/sh
-LIBPATH="$1"
+LIBPATH=$1
 if [ -z "$LIBPATH" ]; then
 	LIBPATH="$DYLD_FALLBACK_LIBRARY_PATH"
 fi
 
-cd ~/lib
-for DYDIR in `echo "$LIBPATH" | sed 's/^\.://;s/:/ /g'`; do
-	for DYLIB in `find "$DYDIR" -name "*.dylib" -o -name "*.dylib.*" 2>/dev/null`; do
+LIBHOME=$HOME/lib
+mkdir -p "$LIBHOME"
+cd "$LIBHOME" || exit 1
+for DYDIR in $(echo "$LIBPATH" | sed 's/^\.://;s/:/ /g'); do
+	find "$DYDIR" -name "*.dylib" -o -name "*.dylib.*" 2>/dev/null | while read -r DYLIB; do
 		ln -sf "$DYLIB"
 	done
 done
-find . -xtype l | xargs rm 2>/dev/null
+find . -xtype l -print0 | xargs -0 rm 2>/dev/null
