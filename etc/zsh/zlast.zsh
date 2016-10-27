@@ -13,5 +13,8 @@ export PATH="$ENV/bin:$ENV/tools:/opt/subversion/bin:/usr/local/bin:/usr/local/s
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 source /usr/local/var/python/bin/activate
 
+# catalog
+export XML_CATALOG_FILES="$ENV/package/vim/XMLCatalog/catalog.xml"
+
 # dylink "$DYLD_FALLBACK_LIBRARY_PATH"
 archey -o

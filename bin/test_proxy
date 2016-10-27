@@ -1,12 +1,11 @@
 #!/bin/bash
 
-TEST="curl -o /dev/null http://sf.testmy.net/SmarTest/down"
-TEMP="/tmp/$(basename $0).$$.tmp"
+TEMP=/tmp/$(basename "$0").$$.tmp
 
 kilo() {
 	N=$1
 	if [[ $N == *k ]]; then
-		N=$(echo $N | sed 's/k$//')
+		N=$(echo "$N" | sed 's/k$//')
 	else
 		N=$(($N / 1024))
 	fi
@@ -14,8 +13,8 @@ kilo() {
 }
 
 once() {
-	proxy $1 curl http://sf.testmy.net/SmarTest/down 2>&1 >/dev/null | tee $TEMP
-	TIME=$(tail -1 $TEMP | sed 's/.*\r//' | awk '{print $7}')
+	proxy "$1" curl --connect-timeout 10 http://sf.testmy.net/SmarTest/down 2>&1 >/dev/null | tee "$TEMP"
+	TIME=$(tail -1 "$TEMP" | sed 's/.*\r//' | awk '{print $7}')
 }
 
 test_port() {
@@ -27,12 +26,12 @@ test_port() {
 	SUM=0
 	I=0
 	while [[ $I -lt $TOTAL ]]; do
-		once $1
+		once "$1"
 		if [[ $TIME = 0 ]]; then
 			echo "Error: Network blocked"
 			return
 		fi
-		SUM=$(($SUM + $(kilo $TIME)))
+		SUM=$(($SUM + $(kilo "$TIME")))
 		I=$(($I + 1))
 	done
 	

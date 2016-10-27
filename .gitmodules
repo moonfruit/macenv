@@ -46,3 +46,9 @@
 [submodule "package/zsh/zsh-syntax-highlighting"]
 	path = package/zsh/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting
+[submodule "package/BaiduExporter"]
+	path = package/BaiduExporter
+	url = https://github.com/acgotaku/BaiduExporter
+[submodule "package/vim/XMLCatalog"]
+	path = package/vim/XMLCatalog
+	url = git@github.com:moonfruit/XMLCatalog.git
