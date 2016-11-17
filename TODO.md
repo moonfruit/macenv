@@ -11,17 +11,18 @@
 - [ ] Obsfucator
 - [ ] Data Validation
 - [ ] ftl GBK
-- [ ] CommonQueryAction
+- [ ] CommonQueryAction sqlRetriever
 - [ ] CommonAlterAction
 - [ ] Huateng
+- [x] Quartz
+- [ ] Log
+- [ ] Hibernate Entity Cache
 
 ## Bugs
 
 ### CIPS
 - [ ] PortIn memory leak
+- [ ] JMS Transfer
 
 ### GVAT
 - [ ] Quartz stop at database down
-
-### GF4J
-- [ ] Call URL garbled
