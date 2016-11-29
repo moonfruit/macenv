@@ -10,8 +10,11 @@ eval "$(env | grep _HOME | sed 's/\(.*\)=.*/hash -d \1="$\1"/')"
 export PATH="$ENV/bin:$ENV/tools:/opt/subversion/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 # virtualenv
-export VIRTUAL_ENV_DISABLE_PROMPT=1
-source /usr/local/var/python/bin/activate
+if [[ -n "$TERM" ]]; then
+	export VIRTUAL_ENV_DISABLE_PROMPT=1
+	source /usr/local/var/python/bin/activate
+	alias python3='env VIRTUAL_ENV="" python3'
+fi
 
 # catalog
 export XML_CATALOG_FILES="$ENV/package/vim/XMLCatalog/catalog.xml"
