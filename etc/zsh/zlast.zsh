@@ -13,7 +13,6 @@ export PATH="$ENV/bin:$ENV/tools:/opt/subversion/bin:/usr/local/bin:/usr/local/s
 if [[ -n "$TERM" ]]; then
 	export VIRTUAL_ENV_DISABLE_PROMPT=1
 	source /usr/local/var/python/bin/activate
-	alias python3='env VIRTUAL_ENV="" python3'
 fi
 
 # catalog
