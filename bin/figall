@@ -3,5 +3,5 @@
 for FONT in /usr/local/opt/figlet/share/figlet/fonts/*.flf; do
 	FONT=$(basename "$FONT" .flf)
 	echo "$FONT"
-	figlet -f "$FONT" "$@"
+	figlet -w 132 -f "$FONT" "$@"
 done

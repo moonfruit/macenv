@@ -46,7 +46,7 @@ ZSH_CUSTOM="$HOME/Documents/Environment/etc/zsh"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(colored-man extract git npm osx pip sublime
+plugins=(colored-man-pages extract git npm osx sublime
          history-substring-search zsh-syntax-highlighting
          yy)
 
@@ -55,4 +55,4 @@ HISTFILE="${ZDOTDIR:-${HOME}}/history.txt"
 ZSH_COMPDUMP="${ZDOTDIR:-${HOME}}/compdump.zsh"
 
 source $ZSH/oh-my-zsh.sh
-source $ZSH_CUSTOM/themes/crack.zsh
+#source $ZSH_CUSTOM/themes/crack.zsh
