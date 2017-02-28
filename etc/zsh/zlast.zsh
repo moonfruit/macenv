@@ -20,5 +20,10 @@ export PATH="$ENV/bin:$ENV/tools:$USER_PYTHON_HOME/bin:$PATH"
 # catalog
 export XML_CATALOG_FILES="$ENV/package/vim/XMLCatalog/catalog.xml"
 
+# brew command-not-found
+if brew command command-not-found-init > /dev/null 2>&1; then
+	eval "$(brew command-not-found-init)"
+fi
+
 # dylink "$DYLD_FALLBACK_LIBRARY_PATH"
 archey -o
