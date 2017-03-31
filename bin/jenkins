@@ -1,2 +1,2 @@
 #!/bin/sh
-java -jar "$ENV/lib/jenkins-cli.jar" -s "$JENKINS_URL" "$@"
+exec java -jar "$ENV/lib/jenkins-cli.jar" -s "$JENKINS_URL" "$@"
