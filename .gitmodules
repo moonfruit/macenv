@@ -28,9 +28,6 @@
 [submodule "package/vim/pathogen"]
 	path = package/vim/pathogen
 	url = https://github.com/tpope/vim-pathogen.git
-[submodule "package/vim/supertab"]
-	path = package/vim/supertab
-	url = https://github.com/ervandew/supertab.git
 [submodule "package/vim/syntastic"]
 	path = package/vim/syntastic
 	url = https://github.com/scrooloose/syntastic.git
