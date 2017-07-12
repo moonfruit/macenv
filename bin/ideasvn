@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "$@" >/Users/moon/Documents/Workspace/x/svn/work1/svn.log
+/usr/local/bin/idea merge "$3" "$2" "$1" "$4"
